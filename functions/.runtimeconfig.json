@@ -1,0 +1,8 @@
+{
+    "env": {
+        "stripe": {
+            "secret_key": "sk_test_",
+            "product_id": "prod_"
+        }
+    }
+}

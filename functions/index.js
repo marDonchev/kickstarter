@@ -1,6 +1,8 @@
+/* eslint-disable indent */
 const functions = require("firebase-functions");
 const Sentry = require("@sentry/node");
-const Tracing = require("@sentry/tracing");
+// const Tracing = require("@sentry/tracing");
+const configEnv = functions.config().env;
 
 Sentry.init({
     dsn: "https://bc4f57bcfc1340c782fa92d65c817137@o233614.ingest.sentry.io/5759164",
@@ -24,6 +26,8 @@ Sentry.init({
 //         transaction.finish();
 //     }
 // }, 99);
+
+console.info("configEnv", configEnv);
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
