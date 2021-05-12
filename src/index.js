@@ -5,6 +5,7 @@ import * as Sentry from "@sentry/react";
 import { Integrations } from "@sentry/tracing";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import config from "./config";
 
 Sentry.init({
     dsn: "https://bc4f57bcfc1340c782fa92d65c817137@o233614.ingest.sentry.io/5759164",
