@@ -29,7 +29,7 @@ const prod = {
 // Usage of the proper config object based on the env variable (REACT_APP_STAGE)
 const config = process.env.REACT_APP_STAGE === "production" ? prod : dev;
 
-export default {
+const configDefault = {
     // Common settings for both dev and prod configs
 
     // Delay before updating the device after the ArcSlider has been used
@@ -37,4 +37,5 @@ export default {
 
     ...config,
 };
+export default configDefault;
 // TODO: Adding some constants here (like statuses = upcoming,processing,posted etc.)
