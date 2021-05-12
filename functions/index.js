@@ -1,4 +1,29 @@
 const functions = require("firebase-functions");
+const Sentry = require("@sentry/node");
+const Tracing = require("@sentry/tracing");
+
+Sentry.init({
+    dsn: "https://bc4f57bcfc1340c782fa92d65c817137@o233614.ingest.sentry.io/5759164",
+
+    // We recommend adjusting this value in production, or using tracesSampler
+    // for finer control
+    tracesSampleRate: 1.0,
+});
+
+// const transaction = Sentry.startTransaction({
+//     op: "test",
+//     name: "My First Test Transaction",
+// });
+
+// setTimeout(() => {
+//     try {
+//         foo();
+//     } catch (e) {
+//         Sentry.captureException(e);
+//     } finally {
+//         transaction.finish();
+//     }
+// }, 99);
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
