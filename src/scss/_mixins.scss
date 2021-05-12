@@ -1,0 +1,13 @@
+@mixin mixin_animation($property, $time: "") {
+    -webkit-transition: $property 0.3s ease-out;
+    -moz-transition: $property 0.3s ease-out;
+    -o-transition: $property 0.3s ease-out;
+    transition: $property 0.3s ease-out;
+
+    @if $time != "" {
+        -webkit-transition: $property $time ease-out;
+        -moz-transition: $property $time ease-out;
+        -o-transition: $property $time ease-out;
+        transition: $property $time ease-out;
+    }
+}
