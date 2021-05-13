@@ -1,8 +1,6 @@
 {
     "env": {
-        "stripe": {
-            "secret_key": "sk_test_",
-            "product_id": "prod_"
-        }
+        "databaseURL": "https://kickstarter-f118c-default-rtdb.europe-west1.firebasedatabase.app",
+        "serviceAccount": "kickstarter-f118c-firebase-adminsdk-mxyns-dbf5ddf5b8.json"
     }
 }
