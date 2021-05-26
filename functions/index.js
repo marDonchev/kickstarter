@@ -88,7 +88,7 @@ const validateFirebaseIdToken = async (req, res, next) => {
             "No Firebase ID token was passed as a Bearer token in the Authorization header.",
             "Make sure you authorize your request by providing the following HTTP header:",
             "Authorization: Bearer <Firebase ID Token>",
-            'or by passing a "__session" cookie.'
+            "or by passing a '__session' cookie."
         );
         res.status(403).send("Unauthorized");
         return;

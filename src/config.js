@@ -12,7 +12,7 @@ const dev = {
     // Section for backend locale information
     api: {
         URLprefix:
-            "http://localhost:5000/social-6ce6c/us-central1/webApi/api/v1/",
+            "http://localhost:5000/kickstarter-f118c/us-central1/webApi/api/v1/",
         unauthorizedURL: "//localhost:3000/logout",
     },
 };
@@ -21,8 +21,8 @@ const prod = {
     // Section for backend locale information
     api: {
         URLprefix:
-            "https://us-central1-social-6ce6c.cloudfunctions.net/webApi/api/v1/",
-        unauthorizedURL: "//social-6ce6c.firebaseapp.com/logout",
+            "https://us-central1-kickstarter-f118c.cloudfunctions.net/webApi/api/v1/",
+        unauthorizedURL: "//kickstarter-f118c.firebaseapp.com/logout",
     },
 };
 
@@ -34,6 +34,19 @@ const configDefault = {
 
     // Delay before updating the device after the ArcSlider has been used
     sliderUpdateDelay: 1500,
+
+    // Firebase
+    firebase: {
+        apiKey: "AIzaSyCr5A9I36Q0uaXQTMvpLgme_sDqkP-2nzQ",
+        authDomain: "kickstarter-f118c.firebaseapp.com",
+        databaseURL:
+            "https://kickstarter-f118c-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "kickstarter-f118c",
+        storageBucket: "kickstarter-f118c.appspot.com",
+        messagingSenderId: "898990859672",
+        appId: "1:898990859672:web:8f857855d2667a70deb7ed",
+        measurementId: "G-QEMP187ZNK",
+    },
 
     ...config,
 };
